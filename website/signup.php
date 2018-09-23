@@ -26,7 +26,7 @@ print_r($phoneno);
 $sql = "insert into users(id,name,password,phoneno,aadhaarno) values('','$username','$password','$phoneno','$aadhaarno')";
 #$result = mysqli_query($conn,$sql);
 if ($conn->query($sql) === TRUE) {
-    header("Location:/image/index.html");
+    header("Location:/website/index.html");
     #echo "Successful";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
