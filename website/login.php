@@ -28,10 +28,10 @@ die("Connection Failed".mysqli_connect_error());
 
       if($rowcount == 1)
       {
-        header("Location:/image/index.html");
+        header("Location:/website/index.html");
       }
       else {
-        header("Location:/image/login.html");
+        header("Location:/website/login.html");
       }
     }
 
