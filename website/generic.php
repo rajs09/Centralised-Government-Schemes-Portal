@@ -34,7 +34,7 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="search.html">Search Scheme</a></li>
-							<li><a href="forum.php">Forum/Grievances</a></li> 
+							<li><a href="forum.php">Forum/Grievances</a></li>
 						</ul>
 					</nav>
 
@@ -42,6 +42,8 @@
 						<div class="inner">
 								<h1>Digital Locker</h1>
 								<?php
+									session_start();
+
 								  // Create database connection
 								  $db = mysqli_connect("localhost", "root", "", "tsechack");
 
@@ -69,6 +71,7 @@
 								  	}
 								  }
 								  $result = mysqli_query($db, "SELECT * FROM img");
+								
 								?>
 								<!DOCTYPE html>
 								<html>
@@ -133,6 +136,9 @@
 								  		<button type="submit" name="upload">POST</button>
 								  	</div>
 								  </form>
+								</div>
+								<div>
+									<a href="logout.php">Logout</a>
 								</div>
 								</body>
 								</html>
