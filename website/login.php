@@ -11,30 +11,30 @@ if(!$conn)
 die("Connection Failed".mysqli_connect_error());
 }
 
+  if(isset($_POST['submit']))
+  {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $password = md5($password);
+    $sql = "select * from users where name='$username' and password='$password'";
 
-  $username = $_POST['username'];
-  #print_r($username);
-  $password = $_POST['password'];
-  $password = md5($password);
-  print_r($password);
-  $sql = "select * from users where name='$username' and password='$password'";
-
-  if ($result=mysqli_query($conn,$sql))
-    {
-      print_r($result);
-    // Return the number of rows in result set
-      $rowcount=mysqli_num_rows($result);
-  #    print_r($rowcount);
-
-      if($rowcount == 1)
+    if ($result=mysqli_query($conn,$sql))
       {
-        header("Location:/website/index.html");
+        $user_id=$result['user_id'];
+        $rowcount=mysqli_num_rows($result);
+        if($rowcount == 1)
+        {
+          setcookie('user_id',$user_id,time()+60*60*7);
+          session_start();
+          $_SESSION['user_id']=$user_id;
+          header("Location:/website/index.html");
+        }
+        else {
+          header("Location:/website/login.html");
+        }
       }
-      else {
-        header("Location:/website/login.html");
-      }
-    }
 
+  }
 
 $conn->close();
 
