@@ -3,10 +3,10 @@ A Website Portal for the government schemes provided by the Central Government a
 
 Features:
 
-1)Website provides digital locker where in users can store their confidential documents securely.
+* Website provides digital locker where in users can store their confidential documents securely.
 
-2)Grievances forum where in users can communicate and help other users to solve their issues.
+* Grievances forum where in users can communicate and help other users to solve their issues.
 
-3)Search and view various government schemes and also read the details about the schemes.
+* Search and view various government schemes and also read the details about the schemes.
 
-4)Login and Signup page for users,also the user credentials are encrypted for data security.
+* Login and Signup page for users,also the user credentials are encrypted for data security.
