@@ -10,3 +10,10 @@ Features:
 3)Search and view various government schemes and also read the details about the schemes.
 
 4)Login and Signup page for users,also the user credentials are encrypted for data security.
+
+### Contributors
+
+- [Neel Shah](https://github.com/deadpanther)
+- [Raj Sanghavi](https://github.com/rajs09)
+- [Punit Patel](https://github.com/punit9878)
+- [Nitin Bhansali](https://github.com/nitin0711)
