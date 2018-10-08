@@ -9,8 +9,8 @@ Features:
 
 * Search and view various government schemes and also read the details about the schemes.
 
+* Login and Signup page for users,also the user credentials are encrypted for data security.
 
-4)Login and Signup page for users,also the user credentials are encrypted for data security.
 
 ### Contributors
 
@@ -19,5 +19,5 @@ Features:
 - [Punit Patel](https://github.com/punit9878)
 - [Nitin Bhansali](https://github.com/nitin0711)
 
-* Login and Signup page for users,also the user credentials are encrypted for data security.
+
 
