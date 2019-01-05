@@ -25,8 +25,10 @@ die("Connection Failed".mysqli_connect_error());
         if($rowcount == 1)
         {
           setcookie('user_id',$user_id,time()+60*60*7);
-          session_start();
+          setcookie('user_name',$username,time()+60*60*7);
+          //session_start();
           $_SESSION['user_id']=$user_id;
+          //setcookie('userid',$user_id);
           header("Location:/website/index.html");
         }
         else {
